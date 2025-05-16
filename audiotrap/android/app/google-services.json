@@ -1,0 +1,28 @@
+{ "project_info": {
+    "project_number": "49187410477",
+    "project_id": "audiotrap-23",
+    "storage_bucket": "audiotrap-23.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49187410477:android:6061b9bc610ca302775ea4",
+        "android_client_info": {
+          "package_name": "com.audiotrap.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChm3frIOrGwCSG1Ru9J8Pp0ha2xATC8Tg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+} 
