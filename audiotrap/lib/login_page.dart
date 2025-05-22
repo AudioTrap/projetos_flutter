@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'forgot_password_page.dart';
 
 class LoginPage extends StatefulWidget {
   final VoidCallback onLoginSuccess;
@@ -47,11 +48,16 @@ class _LoginPageState extends State<LoginPage> {
               decoration: const InputDecoration(labelText: "Senha"),
             ),
             const SizedBox(height: 12),
-            if (errorMessage != null) 
+            if (errorMessage != null)
               Text(errorMessage!, style: const TextStyle(color: Colors.red)),
-            ElevatedButton(
-              onPressed: signIn,
-              child: const Text("Entrar"),
+            ElevatedButton(onPressed: signIn, child: const Text("Entrar")),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const ForgotPasswordPage()),
+                );
+              },
+              child: const Text("Esqueci minha senha"),
             ),
           ],
         ),
@@ -59,6 +65,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-//naaaooooo
-
-
